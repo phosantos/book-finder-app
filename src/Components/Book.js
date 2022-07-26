@@ -15,6 +15,10 @@ const Book = () => {
     request(url);
   }, [id, request]);
 
+  React.useEffect(() => {
+    if (data) document.title = data.volumeInfo.title + ' | Busca Livro';
+  }, [data]);
+
   return (
     <>
       <Header />
