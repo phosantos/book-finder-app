@@ -52,11 +52,23 @@ const Book = () => {
               )}
 
               <div className={styles.buttons}>
-                {data.volumeInfo.previewLink && (
-                  <a href={data.volumeInfo.previewLink}>Ler demonstração</a>
+                {data.accessInfo.webReaderLink && (
+                  <a
+                    href={data.accessInfo.webReaderLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ler demonstração
+                  </a>
                 )}
                 {data.saleInfo.buyLink && (
-                  <a href={data.saleInfo.buyLink}>Comprar</a>
+                  <a
+                    href={data.saleInfo.buyLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Comprar
+                  </a>
                 )}
               </div>
             </div>

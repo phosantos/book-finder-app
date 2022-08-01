@@ -11,6 +11,10 @@ const Search = () => {
   const { data, loading, request } = useFetch();
 
   React.useEffect(() => {
+    document.title = 'Busca Livro';
+  }, []);
+
+  React.useEffect(() => {
     const url = `https://www.googleapis.com/books/v1/volumes?q=${searchParams.get(
       'q',
     )}&maxResults=20&key=${API_KEY}`;

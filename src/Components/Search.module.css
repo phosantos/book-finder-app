@@ -29,13 +29,18 @@
 
 .thumbImg {
   background-color: var(--red);
-  min-height: 190px;
   min-width: 128px;
   max-width: 128px;
+  height: 190px;
   display: flex;
   align-items: center;
   text-align: center;
   
+}
+
+.thumbImg img{
+  height: 100%;
+  width: 100%;
 }
 
 .thumbImg span {

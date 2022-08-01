@@ -15,12 +15,20 @@
 
 .thumbImg {
   background-color: var(--red);
-  min-height: 190px;
   min-width: 128px;
-  max-width: 128px;
+  max-height: 190px;
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.thumbImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbImg span{
+  max-width: 128px;
 }
 
 .title {
